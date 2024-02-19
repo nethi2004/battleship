@@ -5,20 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battleship Game</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="pink-star.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <h1>battleship:D</h1>
+    <img src="pink-star.png">
+    <p class="head">B A T T L E  S H I P :D</p>
+    <div class="container">
+    <p class="minil"> PC board</p>
+    <p class="minir"> User board</p>
+    </div>
     <div class="game-container">
         <div id="user-board" class="board"></div>
         <div id="pc-board" class="board"></div>
     </div>
+    <p id="message"></p>
     <div id="game-info">
-        <p id="message"></p>
-        <p>Hits: <span id="hits-count">0</span></p>
-        <p>Misses: <span id="misses-count">0</span></p>
-        <button id="new-game-btn">New Game</button>
+        
+        <div id="left">
+            <p>Hits: <span id="hits-count">0</span></p>
+            <p>Misses: <span id="misses-count">0</span></p>
+        </div>
+        <div id="right">
+            <p>Hits: <span id="phits-count">0</span></p>
+            <p>Misses: <span id="pmisses-count">0</span></p>
+        </div>
     </div>
+    <button id="new-game-btn">New Game</button>
     <script src="script.js"></script>
 </body>
 </html>
