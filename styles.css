@@ -9,7 +9,7 @@
 .cell {
     width: 40px;
     height: 40px;
-    background-color: hotpink;
+    background-color: #FF1493;
 }
 
 .hit {
@@ -26,16 +26,97 @@
 }
 
 #game-info {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
-    text-align: center;
 }
 
 body{
-    background-color: darkmagenta;
-    font-family: Fuzzy Bubbles;
-}
-
-h1{
-    font-size: xx-large;
+    background-color: #FFB6C1;
+    font-family: Roboto;
     text-align: center;
 }
+
+.head {
+    font-size: 50px;
+    text-align: center;
+    color: white; 
+    font-weight: 900;
+    margin-top: 5px;
+}
+button{
+    background-color: #FF69B4;
+    border-color: #FF1493;
+    color: whitesmoke;
+    width: 200px; 
+    height: 50px; 
+    font-size: 20px;
+}
+
+img{
+    width: 90px;
+}
+
+#message {
+    font-size: 20px;
+}
+.minir {
+    font-size: 20px;
+    color: white;
+    margin-right: 250px;
+}
+.minil {
+    font-size: 20px;
+    color: white;
+    margin-left: 250px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  #left{
+    margin-left: 250px;
+    font-size: 15px;
+  }
+
+  #right{
+    margin-right: 250px;
+    font-size: 15px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
